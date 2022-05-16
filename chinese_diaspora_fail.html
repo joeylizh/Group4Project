@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html style="height: 100%">
+    <head>
+        <title>Cultural Migration</title>
+        <meta charset="UTF-8">
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+        <!-- <script src="./js/d3.min.js"></script>
+        <script src="./js/d3-tip-v6.js"></script> -->
+        <!-- <link rel="stylesheet" href="./js/d3-tip.css"> -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
+        <script charset="utf-8" src="https://d3js.org/d3.v4.min.js"></script>
+    </head>
+
+    <body style="height: 100%; margin: 0">
+
+
+        <div id="container" style="height: 100%"></div>
+
+
+        <script type="text/javascript">
+            var dom = document.getElementById("container");
+            var myChart = echarts.init(dom);
+            var app = {};
+            var option;
+            // https://github.com/echarts-maps/echarts-countries-js/blob/master/echarts-countries-js/world.js
+            // world-administrative-boundaries.geojson
+            // overseas_chinese_population.geojson
+            // var ROOT_PATH = 'https://cdn.jsdelivr.net/gh/apache/echarts-website@asf-site/examples'
+            
+            
+
+            myChart.showLoading();
+            $.get('Data/worldgeo.json', function (worldJson) {
+                myChart.hideLoading();
+                echarts.registerMap('worldmap', worldJson);
+                
+                d3.csv('Data/overseas_chinese.csv', function(data){
+                console.log(data)
+                for (var i = 0; i < data.length; i++) {
+                    console.log(data[i].name);
+                    console.log(data[i].value);
+                }
+                });
+
+            //     var data = [ 
+            //     { name: 'Indonesia', value: 8010.72 },
+            //     { name: 'Thailand', value: 7512.6 },
+            //     { name: 'Malaysia', value: 6540.8 },
+            //     { name: 'Singapore', value: 2808.3 },
+            //     { name: 'Philippines', value: 1243.16 },
+            //     { name: 'Myanmar', value: 1053.75 },
+            //     { name: 'Vietnam', value: 992.6 },
+            //     { name: 'Japan', value: 674.87 },
+            //     { name: 'Lao PDR', value: 176.49 },
+            //     { name: 'Cambodia', value: 147.02 },
+            //     { name: 'India', value: 129.74 },
+            //     { name: 'United States', value: 4160.43 },
+            //     { name: 'United Kingdom', value: 401.02 },
+            //     { name: 'Canada', value: 1511.22 },
+            // ];
+                data.sort(function (a, b) {
+                return a.value - b.value;
+                });
+            const mapOption = {
+                visualMap: {
+                left: 'right',
+                min: 5,
+                max: 8100,
+                inRange: {
+                    // prettier-ignore
+                    color: ['#313695', '#4575b4', '#74add1', '#abd9e9', '#e0f3f8', '#ffffbf', '#fee090', '#fdae61', '#f46d43', '#d73027', '#a50026']
+                },
+                text: ['High', 'Low'],
+                calculable: true
+                },
+                series: [
+                {
+                    id: 'population',
+                    type: 'map',
+                    roam: true,
+                    map: 'worldmap',
+                    animation: 'auto',
+                    animationDurationUpdate: 1000,
+                    universalTransition: true,
+                    zoom: true,
+                    data: data
+                }
+                ]
+            };
+
+            const barOption = {
+                xAxis: {
+                type: 'value'
+                },
+                yAxis: {
+                type: 'category',
+                axisLabel: {
+                    rotate: 30
+                },
+                data: data.map(function (item) {
+                    return item.name;
+                })
+                },
+                animation: 'auto',
+                animationDurationUpdate: 1000,
+                series: {
+                type: 'bar',
+                id: 'population',
+                data: data.map(function (item) {
+                    return item.value;
+                }),
+                universalTransition: true
+                }
+            };
+            
+            let currentOption = mapOption;
+            myChart.setOption(mapOption);
+            setInterval(function () {
+                currentOption = currentOption === mapOption ? barOption : mapOption;
+                myChart.setOption(currentOption, true);
+            }, 2000);
+            });
+
+            if (option && typeof option === 'object') {
+                myChart.setOption(option);
+            }
+
+        </script>
+
+    </body>
+</html>
+    
+
+

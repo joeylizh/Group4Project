@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html style="height: 100%">
+<head>
+    <title>CHinese Diaspora</title>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
+    <script charset="utf-8" src="https://d3js.org/d3.v4.min.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+
+    <!-- <link href='style.css' rel='stylesheet' /> -->
+</head>
+
+<body style="height: 100%; margin: 0">
+
+
+    <div id="pagecontent">
+       
+        <p><select id="Options">
+            <option hidden>Change option Here:</option>
+            <option value="mapOption">map</option>
+            <option value="barOption">bar chart</option>
+            </select>
+        </p>
+    
+    </div>
+
+    <div id='map'></div>
+
+    <div id="container" style="height: 100%"></div>
+
+
+    <script type="text/javascript">
+
+        var dom = document.getElementById("container");
+        var myChart = echarts.init(dom);
+        var app = {};
+        var option;
+        // https://github.com/echarts-maps/echarts-countries-js/blob/master/echarts-countries-js/world.js
+        // world-administrative-boundaries.geojson
+        // overseas_chinese_population.geojson
+        // var ROOT_PATH = 'https://cdn.jsdelivr.net/gh/apache/echarts-website@asf-site/examples'
+        
+        
+        myChart.showLoading();
+        $.get('Data/worldgeo.json', function (worldJson) {
+            myChart.hideLoading();
+            echarts.registerMap('worldmap', worldJson);
+        
+            d3.csv('Data/overseas_chinese_country_pop.csv', function(data){
+                console.log(data)
+                
+
+                data.sort(function (a, b) {
+                return a.value - b.value;
+                });
+                var topValue = data.slice(58,79);
+                // setTooltip(series = NULL);
+                const mapOption = {
+                    tooltip: {
+                        formatter: '{b}, {c}' 
+                    },
+                    visualMap: {
+                        left: 'right',
+                        min: 5,
+                        max: 8100,
+                        inRange: {
+                        // prettier-ignore
+                        color: ['#313695', '#4575b4', '#74add1', '#abd9e9', '#e0f3f8', '#ffffbf', '#fee090', '#fdae61', '#f46d43', '#d73027', '#a50026']
+                        },
+                        text: ['High', 'Low'],
+                        calculable: true
+                    },
+                    series: [{
+                        id: 'population',
+                        type: 'map',
+                        roam: true,
+                        map: 'worldmap',
+                        animation: 'auto',
+                        animationDurationUpdate: 1000,
+                        universalTransition: true,
+                        zoom: true,
+                        data: data
+                    }]              
+                };
+
+                const barOption = {
+                    xAxis: {
+                    type: 'value'
+                    },
+                    
+                    yAxis: {
+                    type: 'category',
+                    axisLabel: {
+                        rotate: 0
+                    },
+
+                    data: topValue.map(function (item) {
+                        // console.log()
+                        return item.name;
+                    })
+                    },
+                    animation: 'auto',
+                    animationDurationUpdate: 1200,
+                    series: {
+                    type: 'bar',
+                    id: 'population',
+                    data: topValue.map(function (item) {
+                        // console.log(topValue);
+                        return item.value;
+                    }),
+                    universalTransition: true
+                    }
+                };
+
+
+                myChart.setOption(mapOption);
+
+                trigger = 1
+                document.getElementById("Options").onchange = function() {
+                    if (trigger == 1) {
+                        myChart.setOption(barOption);
+                        // const mapOption = {
+                        //     visualMap:{
+                        //         show: false
+                        //     }
+                        // };
+                        // myChart.setOption(mapOption);
+                        trigger = 0;
+                        console.log(trigger)
+                    } else {
+                        myChart.setOption(mapOption);
+                        const barOption = {
+                            yAxis: [{
+                                show: false,
+                                type: "log",
+                            }]
+                        };
+                        myChart.setOption(barOption);
+                        trigger = 1
+                        console.log(trigger)
+                    }
+                }   
+
+            });
+
+            if (option && typeof option === 'object') {
+                myChart.setOption(option);
+            }
+
+        })
+
+    </script>
+        
+
+    <script>
+
+        //1. basemap: add basemap style to the html
+        mapboxgl.accessToken = 'pk.eyJ1IjoiemhvbmdoYW9saSIsImEiOiJja3lsaW45NWwxY3d4Mm9xbzBldzR2bGZnIn0.98_3F0MM5qTBr5OKtOUASw';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/zhonghaoli/cl33gsca0001k14qcw8z0v3i0',
+            center: [80, 35],
+            zoom: 1.5
+        });
+
+
+            map.on('load', function () {
+                map.addLayer({
+
+                id: 'work',
+                type: 'circle',
+                source: {
+                    type: 'vector',
+                    url: 'mapbox://zhonghaoli.36qe39qd'
+                },
+                'source-layer': 'overseas_chinese_city_pop-0o5v0r',
+                'layout': {
+                    visibility: 'visible'
+                },
+                minzoom: 2,
+                paint: {
+                    'circle-color': '#F0401A',
+                    'circle-opacity': 0.45,
+                    'circle-stroke-width': 0.5,
+                    'circle-stroke-color': '#457B9D',
+                    'circle-color': { //set a gradiant color, very subtle visual change
+                        property: 'population',
+                        stops: [
+                            [1000, "#A9D6E5"],
+                            [1200, "#A9D6E5"],
+                            [1400, "#61A5C2"],
+                            [1600, "#468FAF"],
+                            [1800, "#2C7DA0"],
+                            [2000, "#2A6F97"],
+                            [2200, "#014F86"],
+                            [2400, "#01497C"],
+                            [2600, "#013A63"],
+                            [2800, "#012A4A"],
+                        ]
+                    },
+                    //'circle-color': '#ced4da', - other color
+                    'circle-stroke-opacity': 0.6,
+                    'circle-radius': {
+                        property: 'population',
+                        stops: [
+                            [{
+                                zoom: 1.5,
+                                value: 1
+                            }, 1],
+                            [{
+                                zoom: 1.5,
+                                value: 1800
+                            }, 5],
+                            [{
+                                zoom: 1.5,
+                                value: 2700
+                            }, 8],
+                            [{
+                                zoom: 1.5,
+                                value: 3600
+                            }, 12],
+                            [{
+                                zoom: 1.5,
+                                value: 4500
+                            }, 16],
+                            [{
+                                zoom: 1.5,
+                                value: 5400
+                            }, 20],
+                            [{
+                                zoom: 1.5,
+                                value: 6300
+                            }, 24],
+                            [{
+                                zoom: 1.5,
+                                value: 7200
+                            }, 28],
+                        ]
+                    }
+                }
+
+            });
+
+            })
+            
+        
+                    
+
+    </script>
+
+</body>
+
+</html>
+
+

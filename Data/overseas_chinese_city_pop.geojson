@@ -1,0 +1,740 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.8407863,1.2805179 ]
+    },
+    "properties": {
+    "City":"Singapore",
+    "Country":"Singapore",
+    "Region":"Asia",
+    "Population":2960.14,
+    "Source":"https://www.statista.com/statistics/622748/singapore-resident-population-by-ethnic-group/",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 100.5107441,13.7373979 ]
+    },
+    "properties": {
+    "City":"Bangkok",
+    "Country":"Thailand",
+    "Region":"Asia",
+    "Population":7221,
+    "Source":"https://www.culturaldiplomacy.org/academy/index.php?chinese-diaspora",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 101.6936373,3.1445387 ]
+    },
+    "properties": {
+    "City":"Kuala Lumpur (Selangor State)",
+    "Country":"Malaysia",
+    "Region":"Asia",
+    "Population":2189.2,
+    "Source":"https://web.archive.org/web/20180412212213/http://www.spr.gov.my/sites/default/files/Jilid%201%20Kajian%20Semula%20Persempadanan%20V2.pdf",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.7605655,1.4578971 ]
+    },
+    "properties": {
+    "City":"Johor Bahru (Johor State)",
+    "Country":"Malaysia",
+    "Region":"Asia",
+    "Population":1078.8,
+    "Source":"https://web.archive.org/web/20180412212213/http://www.spr.gov.my/sites/default/files/Jilid%201%20Kajian%20Semula%20Persempadanan%20V2.pdf",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 100.3320309,5.4178117 ]
+    },
+    "properties": {
+    "City":"George Town (Penang State)",
+    "Country":"Malaysia",
+    "Region":"Asia",
+    "Population":685.8,
+    "Source":"https://web.archive.org/web/20180412212213/http://www.spr.gov.my/sites/default/files/Jilid%201%20Kajian%20Semula%20Persempadanan%20V2.pdf",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 101.110048,4.5712252 ]
+    },
+    "properties": {
+    "City":"Ipoh (Perak State)",
+    "Country":"Malaysia",
+    "Region":"Asia",
+    "Population":703.1,
+    "Source":"https://web.archive.org/web/20180412212213/http://www.spr.gov.my/sites/default/files/Jilid%201%20Kajian%20Semula%20Persempadanan%20V2.pdf",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 106.8112461,-6.1446546 ]
+    },
+    "properties": {
+    "City":"Jakarta",
+    "Country":"Indonesia",
+    "Region":"Asia",
+    "Population":579.612,
+    "Source":"DOI: 10.1080/14631369.2016.1227236",
+    "FIELD8":"These seem low based on 8 mil total Chinese in Indonesia"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 112.7389142,-7.2374041 ]
+    },
+    "properties": {
+    "City":"Surabaya",
+    "Country":"Indonesia",
+    "Region":"Asia",
+    "Population":147.047,
+    "Source":"DOI: 10.1080/14631369.2016.1227236",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 98.6716919,3.5926572 ]
+    },
+    "properties": {
+    "City":"Medan",
+    "Country":"Indonesia",
+    "Region":"Asia",
+    "Population":201.519,
+    "Source":"DOI: 10.1080/14631369.2016.1227236",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 109.3427661,-0.0305307 ]
+    },
+    "properties": {
+    "City":"Pontianak",
+    "Country":"Indonesia",
+    "Region":"Asia",
+    "Population":104.325,
+    "Source":"DOI: 10.1080/14631369.2016.1227236",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 107.5997541,-6.9217892 ]
+    },
+    "properties": {
+    "City":"Bandung",
+    "Country":"Indonesia",
+    "Region":"Asia",
+    "Population":83.32,
+    "Source":"DOI: 10.1080/14631369.2016.1227236",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 96.1498833,16.7733311 ]
+    },
+    "properties": {
+    "City":"Yangon",
+    "Country":"Myanmar",
+    "Region":"Asia",
+    "Population":1287.156,
+    "Source":"https://www.worldatlas.com/articles/largest-ethnic-groups-in-myanmar-burma.html",
+    "FIELD8":"Mostly Yangon"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 120.9710572,14.6011743 ]
+    },
+    "properties": {
+    "City":"Manila",
+    "Country":"Phillipines",
+    "Region":"Asia",
+    "Population":500,
+    "Source":"DOI: 10.1007/978-0-387-29904-4_79",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 106.629662,10.823099 ]
+    },
+    "properties": {
+    "City":"Ho Chi Minh City",
+    "Country":"Vietnam",
+    "Region":"Asia",
+    "Population":992.6,
+    "Source":"DOI: 10.1177/2057150X16655077",
+    "FIELD8":"Mostly Ho Chi Minh City: DOI: 10.1355/9789814379243"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 139.691711,35.689487 ]
+    },
+    "properties": {
+    "City":"Tokyo",
+    "Country":"Japan",
+    "Region":"Asia",
+    "Population":197.51,
+    "Source":"http://www.rbzwdb.com/hrxw/2018/01-17/12748.shtml",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 130.408676,33.167519 ]
+    },
+    "properties": {
+    "City":"Kanagawa",
+    "Country":"Japan",
+    "Region":"Asia",
+    "Population":64.83,
+    "Source":"http://www.rbzwdb.com/hrxw/2018/01-17/12748.shtml",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 139.648849,35.856998 ]
+    },
+    "properties": {
+    "City":"Saitama",
+    "Country":"Japan",
+    "Region":"Asia",
+    "Population":62.948,
+    "Source":"http://www.rbzwdb.com/hrxw/2018/01-17/12748.shtml",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 135.502167,34.693737 ]
+    },
+    "properties": {
+    "City":"Osaka",
+    "Country":"Japan",
+    "Region":"Asia",
+    "Population":674.87,
+    "Source":"http://www.rbzwdb.com/hrxw/2018/01-17/12748.shtml",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 102.6133707,17.9640988 ]
+    },
+    "properties": {
+    "City":"Vientiane",
+    "Country":"Laos",
+    "Region":"Asia",
+    "Population":176.49,
+    "Source":"",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 104.9224426,11.568271 ]
+    },
+    "properties": {
+    "City":"Phnom Penh",
+    "Country":"Cambodia",
+    "Region":"Asia",
+    "Population":147.02,
+    "Source":"",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 88.3638815,22.5726723 ]
+    },
+    "properties": {
+    "City":"Calcutta",
+    "Country":"India",
+    "Region":"Asia",
+    "Population":129.74,
+    "Source":"",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 55.2924914,25.2653471 ]
+    },
+    "properties": {
+    "City":"Dubai",
+    "Country":"United Arab Emirates",
+    "Region":"Asia",
+    "Population":109.5,
+    "Source":"",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 126.8309,37.3219 ]
+    },
+    "properties": {
+    "City":"Ansan",
+    "Country":"South Korea",
+    "Region":"Asia",
+    "Population":1075.566,
+    "Source":"https://www.yna.co.kr/view/AKR20190527147000371",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -74.0056357,40.7160814 ]
+    },
+    "properties": {
+    "City":"New York City",
+    "Country":"United States of America",
+    "Region":"North America",
+    "Population":865,
+    "Source":"https://www.pewresearch.org/social-trends/chart/top-10-u-s-metropolitan-areas-by-chinese-population-2019/",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -118.2491091,34.0671948 ]
+    },
+    "properties": {
+    "City":"Los Angeles",
+    "Country":"United States of America",
+    "Region":"North America",
+    "Population":678,
+    "Source":"https://www.pewresearch.org/social-trends/chart/top-10-u-s-metropolitan-areas-by-chinese-population-2019/",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4115197,37.7940949 ]
+    },
+    "properties": {
+    "City":"San Francisco",
+    "Country":"United States of America",
+    "Region":"North America",
+    "Population":582,
+    "Source":"https://www.pewresearch.org/social-trends/chart/top-10-u-s-metropolitan-areas-by-chinese-population-2019/",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.8914769,37.3324873 ]
+    },
+    "properties": {
+    "City":"San Jose, CA",
+    "Country":"United States of America",
+    "Region":"North America",
+    "Population":239,
+    "Source":"https://www.pewresearch.org/social-trends/chart/top-10-u-s-metropolitan-areas-by-chinese-population-2019/",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.065117,42.3497472 ]
+    },
+    "properties": {
+    "City":"Boston",
+    "Country":"United States of America",
+    "Region":"North America",
+    "Population":174,
+    "Source":"https://www.pewresearch.org/social-trends/chart/top-10-u-s-metropolitan-areas-by-chinese-population-2019/",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.3246248,47.5988346 ]
+    },
+    "properties": {
+    "City":"Seattle",
+    "Country":"United States of America",
+    "Region":"North America",
+    "Population":166,
+    "Source":"https://www.pewresearch.org/social-trends/chart/top-10-u-s-metropolitan-areas-by-chinese-population-2019/",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.0220557,38.9003471 ]
+    },
+    "properties": {
+    "City":"Washington",
+    "Country":"United States of America",
+    "Region":"North America",
+    "Population":135,
+    "Source":"https://www.pewresearch.org/social-trends/chart/top-10-u-s-metropolitan-areas-by-chinese-population-2019/",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -87.6409851,41.852461 ]
+    },
+    "properties": {
+    "City":"Chicago",
+    "Country":"United States of America",
+    "Region":"North America",
+    "Population":135,
+    "Source":"https://www.pewresearch.org/social-trends/chart/top-10-u-s-metropolitan-areas-by-chinese-population-2019/",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -157.8747863,21.3161566 ]
+    },
+    "properties": {
+    "City":"Honolulu",
+    "Country":"United States of America",
+    "Region":"North America",
+    "Population":117,
+    "Source":"https://www.pewresearch.org/social-trends/chart/top-10-u-s-metropolitan-areas-by-chinese-population-2019/",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.5544042,29.7043423 ]
+    },
+    "properties": {
+    "City":"Houston",
+    "Country":"United States of America",
+    "Region":"North America",
+    "Population":111,
+    "Source":"https://www.pewresearch.org/social-trends/chart/top-10-u-s-metropolitan-areas-by-chinese-population-2019/",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -79.4019022,43.6533133 ]
+    },
+    "properties": {
+    "City":"Toronto",
+    "Country":"Canada",
+    "Region":"North America",
+    "Population":631.05,
+    "Source":"https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/index-eng.cfm",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -123.1096408,49.2805034 ]
+    },
+    "properties": {
+    "City":"Vancouver",
+    "Country":"Canada",
+    "Region":"North America",
+    "Population":474.655,
+    "Source":"https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/index-eng.cfm",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.0714161,51.0512706 ]
+    },
+    "properties": {
+    "City":"Calgary",
+    "Country":"Canada",
+    "Region":"North America",
+    "Population":89.675,
+    "Source":"https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/index-eng.cfm",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.5626265,45.5070724 ]
+    },
+    "properties": {
+    "City":"Montreal",
+    "Country":"Canada",
+    "Region":"North America",
+    "Population":89.4,
+    "Source":"https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/index-eng.cfm",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "City":"",
+    "Country":"Peru",
+    "Region":"South America",
+    "Population":989.77,
+    "Source":"DOI: 10.1177/2057150X16655077",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "City":"",
+    "Country":"Brazil",
+    "Region":"South America",
+    "Population":252.25,
+    "Source":"",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "City":"",
+    "Country":"Panama",
+    "Region":"Latin America",
+    "Population":135.96,
+    "Source":"",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "City":"",
+    "Country":"Russia",
+    "Region":"Europe",
+    "Population":447.2,
+    "Source":"DOI: 10.1177/2057150X16655077",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "City":"",
+    "Country":"France",
+    "Region":"Europe",
+    "Population":441.75,
+    "Source":"DOI: 10.1177/2057150X16655077",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "City":"",
+    "Country":"United Kingdom",
+    "Region":"Europe",
+    "Population":401.02,
+    "Source":"DOI: 10.1177/2057150X16655077",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "City":"",
+    "Country":"Italy",
+    "Region":"Europe",
+    "Population":201.74,
+    "Source":"DOI: 10.1177/2057150X16655077",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "City":"",
+    "Country":"Spain",
+    "Region":"Europe",
+    "Population":140.62,
+    "Source":"DOI: 10.1177/2057150X16655077",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "City":"",
+    "Country":"Netherlands",
+    "Region":"Europe",
+    "Population":111.45,
+    "Source":"DOI: 10.1177/2057150X16655077",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "City":"",
+    "Country":"Australia",
+    "Region":"Oceania",
+    "Population":1213.903,
+    "Source":"https://quickstats.censusdata.abs.gov.au/census_services/getproduct/census/2016/quickstat/036",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "City":"",
+    "Country":"New Zealand",
+    "Region":"Oceania",
+    "Population":149,
+    "Source":"DOI: 10.1177/2057150X16655077",
+    "FIELD8":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "City":"",
+    "Country":"South Africa",
+    "Region":"Africa",
+    "Population":110.22,
+    "Source":"",
+    "FIELD8":""
+    }
+  }
+]
+}
