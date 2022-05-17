@@ -31,9 +31,9 @@
     <div id="pagecontent">
        
         <p><select id="Options">
-            <option hidden>Change option Here:</option>
-            <option value="mapOption">map</option>
-            <option value="barOption">bar chart</option>
+            <!-- <option hidden>Change option Here:</option> -->
+            <option value="mapOption">Map</option>
+            <option value="barOption">Bar</option>
             </select>
         </p>
     
@@ -234,7 +234,7 @@
 
                 const mapOption = {
                     title: {
-                        text: 'Contemporary Overseas Chinese Diaspora',
+                        text: 'Contemporary Chinese Diaspora',
                         subtext: '(Per thousands people)',
                         subtextStyle: {
                             fontSize: 18,
@@ -264,7 +264,7 @@
                             opacity:0.8
                         },
                         inRange: {
-                            color: ['#c8d8ec', '#5a80a5'],
+                            color: ['#c0ccd4','#98b1c6', '#7297b8', '#4d7cab', '#26619d', '#5a80a5'],
                             // color: ['#313695', '#4575b4', '#74add1', '#abd9e9', '#e0f3f8', '#ffffbf', '#fee090', '#fdae61', '#f46d43', '#d73027', '#a50026'],
                             // colorAlpha: 0,
                             // opacity: 0
@@ -279,6 +279,7 @@
                         map: 'worldmap',
                         animation: true,
                         animationDurationUpdate: 1000,
+                        color: '#000',
                         universalTransition: true,
                         zoom: 1,
                         data: countrydata
@@ -364,29 +365,32 @@
                         left: 'center'
                     },
                     xAxis: {
-                    type: 'value'
+                        show: true,
+                        type: 'value',
+                        color: '#000'
                     },
                     
                     yAxis: {
-                    type: 'category',
-                    axisLabel: {
-                        rotate: 0
-                    },
+                        type: 'category',
+                        axisLabel: {
+                            rotate: 0
+                        },
 
-                    data: topValue.map(function (item) {
+                        data: topValue.map(function (item) {
                         // console.log()
                         return item.name;
-                    })
-                    },
-                    animation: true,
-                    animationDurationUpdate: 1000,
+                        })
+                    }, 
                     series: {
-                    type: 'bar',
-                    id: 'population',
-                    data: topValue.map(function (item) {
+                        type: 'bar',
+                        id: 'population',
+                        // color: '#000',
+                        data: topValue.map(function (item) {
                         // console.log(topValue);
                         return item.value;
                     }),
+                    // animation: true,
+                    animationDurationUpdate: 1000,
                     universalTransition: true
                     }
                 };
@@ -424,6 +428,9 @@
                             yAxis: [{
                                 show: false,
                                 type: "log",
+                            }],
+                            xAxis: [{
+                                show: false
                             }]
                         };
                         myChart.setOption(barOption);
