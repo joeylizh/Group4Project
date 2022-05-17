@@ -14,9 +14,13 @@
 
     <!-- <link href='style.css' rel='stylesheet' /> -->
     <!-- <style>
+        .pagecontent div {
+            top: 0;
+            bottom: 100;
+        }
         body { margin:0; padding:0; }
-        #map { position:absolute; top:0; bottom:0; width:100%; }
-    </style> -->
+        #map { position:absolute; top:0; bottom:0; width:100%; } -->
+    </style>
 
 </head>
 
@@ -67,66 +71,66 @@
 
                 
             var citydata = [
-                { name:	"Singapore",	value:	2960.14	},
-                { name:	"Bangkok",	value:	7221	},
-                { name:	"Kuala_Lumpur",	value:	2189.2	},
-                { name:	"Johor_Bahru",	value:	1078.8	},
-                { name:	"George_Town",	value:	685.8	},
-                { name:	"Ipoh",	value:	703.1	},
-                { name:	"Jakarta",	value:	579.612	},
-                { name:	"Surabaya",	value:	147.047	},
-                { name:	"Medan",	value:	201.519	},
-                { name:	"Pontianak",	value:	104.325	},
-                { name:	"Bandung",	value:	83.32	},
-                { name:	"Yangon",	value:	1287.156	},
-                { name:	"Manila",	value:	500	},
-                { name:	"Ho_Chi_Minh_City",	value:	992.6	},
-                { name:	"Tokyo",	value:	197.51	},
-                { name:	"Kanagawa",	value:	64.83	},
-                { name:	"Saitama",	value:	62.948	},
-                { name:	"Osaka",	value:	674.87	},
-                { name:	"Vientiane",	value:	176.49	},
-                { name:	"Phnom_Penh",	value:	147.02	},
-                { name:	"Calcutta",	value:	129.74	},
-                { name:	"Dubai",	value:	109.5	},
-                { name:	"Ansan",	value:	1075.566	},
-                { name:	"New_York",	value:	865	},
-                { name:	"Los_Angeles",	value:	678	},
-                { name:	"San_Francisco",	value:	582	},
-                { name:	"San_Jose",	value:	239	},
-                { name:	"Boston",	value:	174	},
-                { name:	"Seattle",	value:	166	},
-                { name:	"Washington",	value:	135	},
-                { name:	"Chicago",	value:	135	},
-                { name:	"Honolulu",	value:	117	},
-                { name:	"Houston",	value:	111	},
-                { name:	"Toronto",	value:	631.05	},
-                { name:	"Vancouver",	value:	474.655	},
-                { name:	"Calgary",	value:	89.675	},
-                { name:	"Montreal",	value:	89.4	},
-                { name:	"Lima",	value:	14.223	},
-                { name:	"São_Paulo",	value:	200	},
-                { name:	"Panama_City",	value:	135.96	},
-                { name:	"Moscow",	value:	400	},
-                { name:	"Paris",	value:	600	},
-                { name:	"London",	value:	44	},
-                { name:	"Manchester",	value:	13	},
-                { name:	"Birmingham",	value:	12	},
-                { name:	"Milan",	value:	18.918	},
-                { name:	"Rome",	value:	12.013	},
-                { name:	"Prato",	value:	11.882	},
-                { name:	"Barcelona",	value:	120	},
-                { name:	"Madrid",	value:	40.75	},
-                { name:	"Sydney",	value:	487.976	},
-                { name:	"Melbourne",	value:	356.324	},
-                { name:	"Brisbane",	value:	99.593	},
-                { name:	"Perth",	value:	99.229	},
-                { name:	"Adelaide",	value:	50.216	},
-                { name:	"Canberra",	value:	22.445	},
-                { name:	"Auckland",	value:	171.309	},
-                { name:	"Canterbury",	value:	21.516	},
-                { name:	"Wellington",	value:	21.192	},
-                { name:	"Waikato",	value:	12.084	},
+            { name:	"Singapore",	value:[	2960.14	,	1.735656126	]},
+            { name:	"Bangkok",	value:[	7221	,	1.929298672	]},
+            { name:	"Kuala_Lumpur",	value:[	2189.2	,	1.67014272	]},
+            { name:	"Johor_Bahru",	value:[	1078.8	,	1.516470469	]},
+            { name:	"George_Town",	value:[	685.8	,	1.41809874	]},
+            { name:	"Ipoh",	value:[	703.1	,	1.423508549	]},
+            { name:	"Jakarta",	value:[	579.612	,	1.381568684	]},
+            { name:	"Surabaya",	value:[	147.047	,	1.083728084	]},
+            { name:	"Medan",	value:[	201.519	,	1.152158	]},
+            { name:	"Pontianak",	value:[	104.325	,	1.009194197	]},
+            { name:	"Bandung",	value:[	83.32	,	0.960374631	]},
+            { name:	"Yangon",	value:[	1287.156	,	1.554815593	]},
+            { name:	"Manila",	value:[	500	,	1.349485002	]},
+            { name:	"Ho_Chi_Minh_City",	value:[	992.6	,	1.498387135	]},
+            { name:	"Tokyo",	value:[	197.51	,	1.147794544	]},
+            { name:	"Kanagawa",	value:[	64.83	,	0.905888011	]},
+            { name:	"Saitama",	value:[	62.948	,	0.899490968	]},
+            { name:	"Osaka",	value:[	674.87	,	1.414610061	]},
+            { name:	"Vientiane",	value:[	176.49	,	1.123360052	]},
+            { name:	"Phnom_Penh",	value:[	147.02	,	1.083688209	]},
+            { name:	"Calcutta",	value:[	129.74	,	1.056536947	]},
+            { name:	"Dubai",	value:[	109.5	,	1.01970706	]},
+            { name:	"Ansan",	value:[	1075.566	,	1.515818533	]},
+            { name:	"New_York",	value:[	865	,	1.468508054	]},
+            { name:	"Los_Angeles",	value:[	678	,	1.415614847	]},
+            { name:	"San_Francisco",	value:[	582	,	1.382461492	]},
+            { name:	"San_Jose",	value:[	239	,	1.18919895	]},
+            { name:	"Boston",	value:[	174	,	1.120274624	]},
+            { name:	"Seattle",	value:[	166	,	1.110054044	]},
+            { name:	"Washington",	value:[	135	,	1.065166884	]},
+            { name:	"Chicago",	value:[	135	,	1.065166884	]},
+            { name:	"Honolulu",	value:[	117	,	1.034092931	]},
+            { name:	"Houston",	value:[	111	,	1.022661489	]},
+            { name:	"Toronto",	value:[	631.05	,	1.400031886	]},
+            { name:	"Vancouver",	value:[	474.655	,	1.33818903	]},
+            { name:	"Calgary",	value:[	89.675	,	0.976335693	]},
+            { name:	"Montreal",	value:[	89.4	,	0.975668759	]},
+            { name:	"Lima",	value:[	14.223	,	0.576495605	]},
+            { name:	"São_Paulo",	value:[	200	,	1.150514998	]},
+            { name:	"Panama_City",	value:[	135.96	,	1.066705578	]},
+            { name:	"Moscow",	value:[	400	,	1.301029996	]},
+            { name:	"Paris",	value:[	600	,	1.389075625	]},
+            { name:	"London",	value:[	44	,	0.821726338	]},
+            { name:	"Manchester",	value:[	13	,	0.556971676	]},
+            { name:	"Birmingham",	value:[	12	,	0.539590623	]},
+            { name:	"Milan",	value:[	18.918	,	0.638437611	]},
+            { name:	"Rome",	value:[	12.013	,	0.539825739	]},
+            { name:	"Prato",	value:[	11.882	,	0.537444774	]},
+            { name:	"Barcelona",	value:[	120	,	1.039590623	]},
+            { name:	"Madrid",	value:[	40.75	,	0.805063807	]},
+            { name:	"Sydney",	value:[	487.976	,	1.344199231	]},
+            { name:	"Melbourne",	value:[	356.324	,	1.275922537	]},
+            { name:	"Brisbane",	value:[	99.593	,	0.999114407	]},
+            { name:	"Perth",	value:[	99.229	,	0.998319307	]},
+            { name:	"Adelaide",	value:[	50.216	,	0.850421058	]},
+            { name:	"Canberra",	value:[	22.445	,	0.675559805	]},
+            { name:	"Auckland",	value:[	171.309	,	1.11689009	]},
+            { name:	"Canterbury",	value:[	21.516	,	0.666380768	]},
+            { name:	"Wellington",	value:[	21.192	,	0.663085973	]},
+            { name:	"Waikato",	value:[	12.084	,	0.541105358	]},
             ];
 
             var geoCoordMap = {
@@ -187,7 +191,7 @@
                 Adelaide	: [	138.6007	,	-34.9285	],
                 Canberra	: [	149.131	,	-35.2802	],
                 Auckland	: [	174.7645	,	-36.8509	],
-                Canterbury	: [	43.7542	,	-171.1637	],
+                Canterbury	: [	171.1637,	-43.7542	],
                 Wellington	: [	174.7787	,	-41.2924	],
                 Waikato	: [	175.0233	,	-37.6191	],
             };
@@ -207,49 +211,7 @@
                 };
 
 
-                const cityOption = {
-                    tooltip: {
-                        trigger: 'item',
-                    },
-
-                    geo: {
-                        show: false,
-                        map: 'worldmap',
-                        roam: true
-                    },
-
-                    series: [{
-                        symbol: 'pin',
-                        name: 'citypop',
-                        type: 'scatter',
-                        coordinateSystem: 'geo',
-                        symbolSize: [20,20],
-                        // symbolSize: function (val) {
-                        //     return (val[2] / 100) ;
-                        // },
-                        data: convertData(citydata),
-                        encode: {
-                            value: 2
-                        },
-                        animation: true,
-                        universalTransition: true,
-                        tooltip: {
-                            backgroundColor: 'rgb(0,0,0)',
-                            textStyle: {
-                                color: '#fff'
-                            },
-                            formatter : function (params) {
-                                var values = (params.value + '').split(',');
-                                var names = (params.name + '').split(',');
-
-                                name = names[0]  
-                                value = values[2]
-                                return name + ': ' + value;
-                            }
-                        },
-
-                    }],
-                };
+                
 
                 // const citybarOption = {
                 //     xAxis: {
@@ -268,7 +230,7 @@
                 //     ]
                 // };
 
-                console.log(citydata)
+                // console.log(citydata)
 
                 const mapOption = {
                     title: {
@@ -287,41 +249,106 @@
                     tooltip: {
                         formatter: '{b}, {c}' 
                     },
-                    // daraZoom: 'zoomlock',
-                    // [{
-                    //    inside: 'zoomlock'
-                    // }],
-                    center: [0,0],
-                    scaleLimit: 'max',
-                    zoom: 100,
+                    backgroundColor: '#ece5c8',
+                    // center: [0,0],
                     visualMap: {
                         show: true,
-                        left: 'right',
+                        right: 20,
+                        top: 100,
                         min: 5,
                         max: 8100,
+                        itemHeight: 500,
+                        range:[5.01,8100],
+                        outOfRange: {
+                            color:'#ffb5a7',
+                            opacity:0.8
+                        },
                         inRange: {
-                            color: ['#313695', '#4575b4', '#74add1', '#abd9e9', '#e0f3f8', '#ffffbf', '#fee090', '#fdae61', '#f46d43', '#d73027', '#a50026'],
+                            color: ['#c8d8ec', '#5a80a5'],
+                            // color: ['#313695', '#4575b4', '#74add1', '#abd9e9', '#e0f3f8', '#ffffbf', '#fee090', '#fdae61', '#f46d43', '#d73027', '#a50026'],
                             // colorAlpha: 0,
                             // opacity: 0
                         },
-                        text: ['High', 'Low'],
-                        calculable: true,
+                        text: ['High', 'Low'],                      
                         
                     },
                     series: [{
                         id: 'population',
                         type: 'map',
-                        roam: true,
+                        roam: false,
                         map: 'worldmap',
                         animation: true,
                         animationDurationUpdate: 1000,
                         universalTransition: true,
-                        zoom: true,
+                        zoom: 1,
                         data: countrydata
                     }]              
                 };
 
-                
+                const cityOption = {
+                    tooltip: {
+                        trigger: 'item',
+                        show: true
+                    },
+
+                    geo: {
+                        show: false,
+                        map: 'worldmap',
+                        roam: false,
+                    },
+                    
+                    // visualMap: {
+                    //     show: false,
+                    //     right: 50,
+                    //     datasetIndex: 'citypop',
+                    //     // top: 100,
+                    //     min: 5,
+                    //     max: 810,
+                    //     itemHeight: 50,
+                    //     inRange: {
+                    //         color: ['#954D31' ],
+                    //         // colorAlpha: 0,
+                    //         // opacity: 0
+                    //     },
+                    //     text: ['High', 'Low'],
+                    //     calculable: true,
+                            
+                    // },
+                    series: [{
+                        symbol: 'pin',
+                        name: 'citypop',
+                        type: 'scatter',
+                        coordinateSystem: 'geo',
+                        symbolSize: function (val) {
+                            return (val[3] * 15) ;
+                        },
+                        data: convertData(citydata),
+                        encode: {
+                            value: 2
+                        },
+                        animation: true,
+                        universalTransition: true,
+                        tooltip: {
+                            backgroundColor: 'rgb(0,0,0)',
+                            textStyle: {
+                                color: '#954D31'
+                            },
+                            formatter : function (params) {
+                                var values = (params.value + '').split(',');
+                                var names = (params.name + '').split(',');
+
+                                name = names[0]  
+                                value = values[2]
+                                return name + ': ' + value;
+                            }
+                        },
+                        
+
+                    }],
+                };
+
+
+
                 const barOption = {
                     title: {
                         text: 'Top 20 Coutries of Chinese Diaspora',
@@ -424,116 +451,12 @@
 
 
 
-
-
-
-
-
-
-
-
         })
 
     </script>
         
 
-    <!-- <script>
-
-        mapboxgl.accessToken = 'pk.eyJ1IjoiemhvbmdoYW9saSIsImEiOiJja3lsaW45NWwxY3d4Mm9xbzBldzR2bGZnIn0.98_3F0MM5qTBr5OKtOUASw';
-        var map = new mapboxgl.Map({
-            container: 'map',
-            style: 'mapbox://styles/zhonghaoli/cl33gsca0001k14qcw8z0v3i0',
-            center: [10, 35],
-            zoom: 1.5
-        });
-       
-
-        map.on('load', function () {
-
-            map.addLayer({
-                'id': 'CountryPop',
-                'type': 'fill',
-                'source': {
-                    'type': 'vector',
-                    'url': 'mapbox://zhonghaoli.cutvbpd8'
-                },
-                'source-layer': 'overseas_chinese_country_pop-bx7pmg',
-                'layout': {},
-                'paint': {
-                    'fill-color': '#888788',
-                    'fill-opacity': 0.5
-                    // [
-                        // 'case',
-                        // ['boolean', ['feature-state', 'hover'], false],
-                        // 0.6,
-                        // 0
-                    // ]
-                }
-            })
-
-
-            map.addLayer({
-            
-            id: 'CityPop',
-            type: 'circle',
-            source: {
-                type: 'vector',
-                url: 'mapbox://zhonghaoli.8tyzv48z'
-            },
-            'source-layer': 'overseas_chinese_city_pop-9c5l92',
-            'layout': {
-                visibility: 'visible'
-            },
-            // minzoom: 2,
-            paint: {
-                'circle-color': '#F0401A',
-                'circle-opacity': 0.75,
-                // 'circle-stroke-width': 1,
-                // 'circle-stroke-color': '#457B9D',
-                // 'circle-stroke-opacity': 0.6,
-                'circle-color': { //set a gradiant color, very subtle visual change
-                    property: 'Population',
-                    stops: [
-                        // [1000, "#A9D6E5"],
-                        // [1200, "#A9D6E5"],
-                        // [1400, "#61A5C2"],
-                        [1600, "#468FAF"],
-                        // [1800, "#2C7DA0"],
-                        // [2000, "#2A6F97"],
-                        // [2200, "#014F86"],
-                        // [2400, "#01497C"],
-                        // [2600, "#013A63"],
-                        // [2800, "#012A4A"],
-                    ]
-                },
-                //'circle-color': '#ced4da', - other color
-                
-                'circle-radius': {
-                    property: 'Population',
-                    
-                    stops: [
-                        [{zoom: 1.5, value: 0}, 5],
-                        [{zoom: 1.5, value: 1000}, 10],
-                        [{zoom: 1.5, value: 3000}, 30],
-                        [{zoom: 1.5, value: 7000}, 40],
-                        ]
-                    }
-                }
-
-            });
-
-            
-
-
-
-
-
-        })
-            
-        
-                    
-
-    </script> -->
+    
 
 </body>
 

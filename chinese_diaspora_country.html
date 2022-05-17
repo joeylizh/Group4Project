@@ -155,101 +155,103 @@
     </script>
         
 
-    <script>
+    <!-- <script>
 
-        //1. basemap: add basemap style to the html
         mapboxgl.accessToken = 'pk.eyJ1IjoiemhvbmdoYW9saSIsImEiOiJja3lsaW45NWwxY3d4Mm9xbzBldzR2bGZnIn0.98_3F0MM5qTBr5OKtOUASw';
         var map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/zhonghaoli/cl33gsca0001k14qcw8z0v3i0',
-            center: [80, 35],
+            center: [10, 35],
             zoom: 1.5
         });
+       
 
+        map.on('load', function () {
 
-            map.on('load', function () {
-                map.addLayer({
-
-                id: 'work',
-                type: 'circle',
-                source: {
-                    type: 'vector',
-                    url: 'mapbox://zhonghaoli.36qe39qd'
+            map.addLayer({
+                'id': 'CountryPop',
+                'type': 'fill',
+                'source': {
+                    'type': 'vector',
+                    'url': 'mapbox://zhonghaoli.cutvbpd8'
                 },
-                'source-layer': 'overseas_chinese_city_pop-0o5v0r',
-                'layout': {
-                    visibility: 'visible'
+                'source-layer': 'overseas_chinese_country_pop-bx7pmg',
+                'layout': {},
+                'paint': {
+                    'fill-color': '#888788',
+                    'fill-opacity': 0.5
+                    // [
+                        // 'case',
+                        // ['boolean', ['feature-state', 'hover'], false],
+                        // 0.6,
+                        // 0
+                    // ]
+                }
+            })
+
+
+            map.addLayer({
+            
+            id: 'CityPop',
+            type: 'circle',
+            source: {
+                type: 'vector',
+                url: 'mapbox://zhonghaoli.8tyzv48z'
+            },
+            'source-layer': 'overseas_chinese_city_pop-9c5l92',
+            'layout': {
+                visibility: 'visible'
+            },
+            // minzoom: 2,
+            paint: {
+                'circle-color': '#F0401A',
+                'circle-opacity': 0.75,
+                // 'circle-stroke-width': 1,
+                // 'circle-stroke-color': '#457B9D',
+                // 'circle-stroke-opacity': 0.6,
+                'circle-color': { //set a gradiant color, very subtle visual change
+                    property: 'Population',
+                    stops: [
+                        // [1000, "#A9D6E5"],
+                        // [1200, "#A9D6E5"],
+                        // [1400, "#61A5C2"],
+                        [1600, "#468FAF"],
+                        // [1800, "#2C7DA0"],
+                        // [2000, "#2A6F97"],
+                        // [2200, "#014F86"],
+                        // [2400, "#01497C"],
+                        // [2600, "#013A63"],
+                        // [2800, "#012A4A"],
+                    ]
                 },
-                minzoom: 2,
-                paint: {
-                    'circle-color': '#F0401A',
-                    'circle-opacity': 0.45,
-                    'circle-stroke-width': 0.5,
-                    'circle-stroke-color': '#457B9D',
-                    'circle-color': { //set a gradiant color, very subtle visual change
-                        property: 'population',
-                        stops: [
-                            [1000, "#A9D6E5"],
-                            [1200, "#A9D6E5"],
-                            [1400, "#61A5C2"],
-                            [1600, "#468FAF"],
-                            [1800, "#2C7DA0"],
-                            [2000, "#2A6F97"],
-                            [2200, "#014F86"],
-                            [2400, "#01497C"],
-                            [2600, "#013A63"],
-                            [2800, "#012A4A"],
-                        ]
-                    },
-                    //'circle-color': '#ced4da', - other color
-                    'circle-stroke-opacity': 0.6,
-                    'circle-radius': {
-                        property: 'population',
-                        stops: [
-                            [{
-                                zoom: 1.5,
-                                value: 1
-                            }, 1],
-                            [{
-                                zoom: 1.5,
-                                value: 1800
-                            }, 5],
-                            [{
-                                zoom: 1.5,
-                                value: 2700
-                            }, 8],
-                            [{
-                                zoom: 1.5,
-                                value: 3600
-                            }, 12],
-                            [{
-                                zoom: 1.5,
-                                value: 4500
-                            }, 16],
-                            [{
-                                zoom: 1.5,
-                                value: 5400
-                            }, 20],
-                            [{
-                                zoom: 1.5,
-                                value: 6300
-                            }, 24],
-                            [{
-                                zoom: 1.5,
-                                value: 7200
-                            }, 28],
+                //'circle-color': '#ced4da', - other color
+                
+                'circle-radius': {
+                    property: 'Population',
+                    
+                    stops: [
+                        [{zoom: 1.5, value: 0}, 5],
+                        [{zoom: 1.5, value: 1000}, 10],
+                        [{zoom: 1.5, value: 3000}, 30],
+                        [{zoom: 1.5, value: 7000}, 40],
                         ]
                     }
                 }
 
             });
 
-            })
+            
+
+
+
+
+
+        })
             
         
                     
 
-    </script>
+    </script> -->
 
 </body>
 
