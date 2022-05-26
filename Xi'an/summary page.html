@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="summary page.css">
+</head>
+
+<body>
+    <div class="fade"></div>
+    <button id="switch" onclick="switch_desc()">Static</button>
+    
+    <!-- background image -->
+    <div class="tl-bg" style="background-image: url(https://github.com/joeylizh/Group4Project/blob/main/images/%E8%A5%BF%E5%AE%89%E5%A4%A7%E5%94%90%E4%B8%8D%E5%A4%9C%E5%9F%8E.png?raw=true)"></div>
+    <!-- picture reference: https://www.ourchinastory.com/zh/2393/%E8%87%B3%E6%BD%AE%E7%8E%A9%E6%A8%82%EF%BD%9C%E8%A5%BF%E5%AE%89%E5%A4%A7%E5%94%90%E4%B8%8D%E5%A4%9C%E5%9F%8E%20%E6%8E%A2%E7%B4%A2%E5%8B%95%E9%9D%9C%E7%9A%86%E5%AE%9C%E7%9A%84%E6%96%87%E5%8C%96%E4%B9%8B%E6%97%85 -->
+
+    <!-- the rising caption  -->
+    <section class="scolling-caption">
+
+        <div class="ct-city">
+            <p class="f2 heading--sanSerif">Xi'an, China</p>
+        </div>
+        
+        <div class="crawl" id="crawl_word">
+            <div class="title">
+                <p>Conclusion</p>
+            </div>
+            
+            <p>This is a story about the diffusion of Chinese culture around the world, where we treat people as the carrier of culture. Backtracking across the millennium, Chang’an as a metropolis during the most splendid period of ancient China, it opened the Silk Road and was a beginning of China’s external communication from local to regional global. After centuries of changes, the overland silk road was declining while the Maritime Silk Road was gradually emerging with a more extensive world network. China increasingly contributed to the world trade and triggered the emigration waves in subsequent centuries. From Ming Dynasty to the 20th century, China experienced three emigration waves. Early immigrants ranged from trade and agriculture, to gold mining and escaping war, as well as coolie work, the purpose of immigration was always closely tied to the context of the time. As the growth of immigrant population, various Chinese enclaves were gradually formed worldwide, which was the prototype of Chinatown. Through the first few decades of the founding of New China, immigration activities were prohibited due to the lockdown policy, and it was not until the 1970s that the country's gates were reopened. And with the evoluation of transportation, airplanes became a more convenient way to travel abroad, which indirectly contributed to the increasing number of immigrants. The main group at this time changed to students and professionals, and the number of immigrants to developing countries in Africa, Latin America, and Southeast Asia also began to grow gradually. Nowadays, Chinese have brought their culture to all parts of the world and have taken root in these places, the traditional Chinese culture is merged with local culture and developing their own unique values. Chinatown as a carrier of this special culture, it is no longer just a Chinese ethnic enclave, but more as a distinctive symbol of Chinese culture going global and relocation.
+            <br/> Now, the story is still silently going on ...</p>
+            
+        </div>
+
+    </section>
+
+    <!-- the static caption -->
+    <section class="show-caption">
+        <div class="ct-city2">
+            <p class="city2-p">Xi'an, China</p>
+        </div>
+        
+        <div class="desc" id="normal_word">
+            <div class="title">
+                <h1>Conclusion</h1>
+            </div>
+            
+            <p>This is a story about the diffusion of Chinese culture around the world, where we treat people as the carrier of culture. Backtracking across the millennium, Chang’an as a metropolis during the most splendid period of ancient China, it opened the Silk Road and was a beginning of China’s external communication from local to regional global. After centuries of changes, the overland silk road was declining while the Maritime Silk Road was gradually emerging with a more extensive world network. China increasingly contributed to the world trade and triggered the emigration waves in subsequent centuries. From Ming Dynasty to the 20th century, China experienced three emigration waves. Early immigrants ranged from trade and agriculture, to gold mining and escaping war, as well as coolie work, the purpose of immigration was always closely tied to the context of the time. As the growth of immigrant population, various Chinese enclaves were gradually formed worldwide, which was the prototype of Chinatown. Through the first few decades of the founding of New China, immigration activities were prohibited due to the lockdown policy, and it was not until the 1970s that the country's gates were reopened. And with the evoluation of transportation, airplanes became a more convenient way to travel abroad, which indirectly contributed to the increasing number of immigrants. The main group at this time changed to students and professionals, and the number of immigrants to developing countries in Africa, Latin America, and Southeast Asia also began to grow gradually. Nowadays, Chinese have brought their culture to all parts of the world and have taken root in these places, the traditional Chinese culture is merged with local culture and developing their own unique values. Chinatown as a carrier of this special culture, it is no longer just a Chinese ethnic enclave, but more as a distinctive symbol of Chinese culture going global and relocation.
+            <br/> Now, the story is still silently going on ...</p>
+        </div>
+    
+    </section>
+
+    <!-- the button -->
+    <script>
+        function switch_desc() {
+            if (document.getElementById('switch').innerHTML == 'Static') {
+
+                document.getElementById('normal_word').style.visibility = 'visible'
+                document.getElementById('crawl_word').style.visibility = 'hidden'
+                document.getElementById('switch').innerHTML = 'Normal'
+            } else {
+                document.getElementById('normal_word').style.visibility = 'hidden'
+                document.getElementById('crawl_word').style.visibility = 'visible'
+                document.getElementById('switch').innerHTML = 'Static'
+            }
+        }
+    </script>
+</body>
+</html>
+
