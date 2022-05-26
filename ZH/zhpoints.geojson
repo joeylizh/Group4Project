@@ -1,0 +1,42 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"description":"<strong>NANJING</strong><p>CHINA</p><p>Nanjing was the capital of the Ming Dynasty. Zheng He set off from Nanjing after receiving an imperial edict to gather a fleet of ships in Taicang and go on a long voyage. Zheng He was transported back to Nanjing after his death, where his tomb was restored afterwards and a small museum was built next to it.</p>"},"geometry":{"type":"Point","coordinates":[118.796877,32.060255]}}
+,
+{"type":"Feature","properties":{"description":"<strong>TAICANG</strong><p>CHINA</p><p>Taicang, part of the city of Suzhou, is a city located south of the mouth of the Yangtze River. The city reached its heyday between 1271 and 1368. During the Ming Dynasty, the port of Liuhe in Taicang was the departure point for Zheng He's treasure ships.</p>"},"geometry":{"type":"Point","coordinates":[121.13055,31.457735]}}
+,
+{"type":"Feature","properties":{"description":"<strong>QUANZHOU</strong><p>CHINA</p><p>Quanzhou, located in the south of Fujian province, was a major port for Chinese foreign traders from the 11th to the 14th century. Quanzhou was the point of return and disembarkation for Zheng He's voyages. The seafaring technology was advanced; Zheng He visited Quanzhou to employ fleets of seafaring technicians, craftsmen, and interpreters.</p>"},"geometry":{"type":"Point","coordinates":[118.675675,24.874132]}}
+,
+{"type":"Feature","properties":{"description":"<strong>CHAMPA</strong><p>VIETNAM</p><p>From approximately the 2nd century AD until 1832, Champa was a collection of independent Cham polities that extended across the coast of what is today central and southern Vietnam. As the first stop on Zheng He's voyage to the West and an important node on the Maritime Silk Road, the Kingdom of Champa played an important role in the Maritime Silk Road due to its bountiful products and its favourable geographical location, thus reaping huge benefits.</p>"},"geometry":{"type":"Point","coordinates":[109.222557,13.772566]}}
+,
+{"type":"Feature","properties":{"description":"<strong>SINGAPORE</strong><p>SINGAPORE</p><p>Even though Zheng He’s fleets haven’t visited Singapore, all of their seven voyages have gone through the Singapore Strait. According to the Mao Kun Map, Zheng He's fleets once reached the southernmost point of the Malacca Strait and passed a huge stone that looks like a dragon's tooth, named Dragon's Tooth Gate.</p>"},"geometry":{"type":"Point","coordinates":[103.819836,1.352083]}}
+,
+{"type":"Feature","properties":{"description":"<strong>HO CHI MINH</strong><p>VIETNAM</p><p>Zheng He's fleet might not have visited Saigon (Ho Chi Minh City, the capital of Vietnam), but there are accounts of the rivers and ports to the south of the city in the Mao Kun Map.</p>"},"geometry":{"type":"Point","coordinates":[106.629664,10.823099]}}
+,
+{"type":"Feature","properties":{"description":"<strong>MALDIVES</strong><p>MALDIVES</p><p>The history of the Maldives is intertwined with the history of South Asia and the Indian Ocean. Chinese pottery buried in various locations in the Maldives also suggests direct or indirect trade links between China and the Maldives. Zheng He visited the Maldives at least twice in 1413 and 1431. Zheng He's records provide detailed information on Maldivian specialities and customs, among other details. These archives from China also tell us that in 1417, the Maldivian King Yusof sent an ambassador to visit the Emperor in Nanjing, the capital of China.</p>"},"geometry":{"type":"Point","coordinates":[73.22068,3.202778]}}
+,
+{"type":"Feature","properties":{"description":"<strong>AYUTTHAYA</strong><p>THAILAND</p><p>The Ayutthaya Kingdom existed from 1351 to 1767 in Siam, or present-day Thailand. There are three temples associated with Sam Po Kong (the name by which Zheng He is known there) in Thailand, where many Chinese characters are left. They were probably used for worship by Zheng He during his visits, which is circumstantial evidence that Zheng He listed Siam as a port of call during his 15th century explorations. A statue of him stands today in the city.</p>"},"geometry":{"type":"Point","coordinates":[100.529612,14.330435]}}
+,
+{"type":"Feature","properties":{"description":"<strong>JAVA</strong><p>INDONESIA</p><p>Java is the world's most populous island, constituting approximately 55% of the Indonesian population. Before Zheng He arrived in Java, Chinese merchants had already established settlements there. The porcelain and silk products carried by Zheng He's fleet became the most popular goods.</p>"},"geometry":{"type":"Point","coordinates":[]}}
+,
+{"type":"Feature","properties":{"description":"<strong>PALEMBANG</strong><p>INDONESIA</p><p>Palembang is the capital city of the Indonesian province of South Sumatra. It was the capital of Srivijaya, a Buddhist kingdom that ruled much of the western Indonesian Archipelago and controlled many maritime trade routes, including the Strait of Malacca. Zheng He settled the vicious pirates, led by Chen Zuyi, and restored peace to the city.</p>"},"geometry":{"type":"Point","coordinates":[104.775431,-2.976073]}}
+,
+{"type":"Feature","properties":{"description":"<strong>MALACCA</strong><p>MALAYSIA</p><p>Malacca is a state in Malaysia, next to the Strait of Malacca. In the 15th century, this was the midway point on the maritime crossing between China and the lands along the western rim of the Indian Ocean. Sailors from Zheng He’s fleets built homes and storehouses on the Straits of Malacca, and many of them chose to stay there. The Cheng Ho Cultural Museum, a museum about the life of Zheng He, was opened in Malacca in 2006.</p>"},"geometry":{"type":"Point","coordinates":[102.249063,2.194418]}}
+,
+{"type":"Feature","properties":{"description":"<strong>SEMUDERA</strong><p>INDONESIA</p><p>The Samudera Pasai Sultanate was a Muslim harbour kingdom on the north coast of Sumatra from the 13th to the 16th centuries. By the 13th century, the collapse of Srivijayan power drew foreign traders to harbours on the northern Sumatran shores of the Bay of Bengal, safe from the pirate lairs at the southern end of the Strait of Malacca. Northern Sumatra had a hinterland rich in gold and forest produce. It was accessible to all the merchants of the archipelago who wanted to meet ships from the Indian Ocean. For many centuries, Arab and Indian Muslims traded in Indonesia and China. </p>"},"geometry":{"type":"Point","coordinates":[97.141322,5.181164]}}
+,
+{"type":"Feature","properties":{"description":"<strong>Ceylon</strong><p>SRI LANKA</p><p>Sri Lanka, formerly known as Ceylon, lies in the Indian Ocean, southwest of the Bay of Bengal and southeast of the Arabian Sea. Sri Lanka's geographic location and deep harbours have made it of great strategic importance as a major trading hub. The trade in luxury goods and spices attracts traders from many countries.</p>"},"geometry":{"type":"Point","coordinates":[]}}
+,
+{"type":"Feature","properties":{"description":"<strong>LAMU</strong><p>KENYA</p><p></p>"},"geometry":{"type":"Point","coordinates":[]}}
+,
+{"type":"Feature","properties":{"description":"<strong>TEHERAN</strong><p>IRAN</p><p></p>"},"geometry":{"type":"Point","coordinates":[]}}
+,
+{"type":"Feature","properties":{"description":"<strong>TEHERAN</strong><p>IRAN</p><p></p>"},"geometry":{"type":"Point","coordinates":[]}}
+,
+{"type":"Feature","properties":{"description":"<strong>TEHERAN</strong><p>IRAN</p><p></p>"},"geometry":{"type":"Point","coordinates":[]}}
+,
+{"type":"Feature","properties":{"description":"<strong>TEHERAN</strong><p>IRAN</p><p></p>"},"geometry":{"type":"Point","coordinates":[]}}
+,
+{"type":"Feature","properties":{"description":"<strong>TEHERAN</strong><p>IRAN</p><p></p>"},"geometry":{"type":"Point","coordinates":[]}}
+,
+{"type":"Feature","properties":{"description":"<strong>TEHERAN</strong><p>IRAN</p><p></p>"},"geometry":{"type":"Point","coordinates":[]}}
+,
+{"type":"Feature","properties":{"description":"<strong>TEHERAN</strong><p>IRAN</p><p></p>"},"geometry":{"type":"Point","coordinates":[]}}
+]}
